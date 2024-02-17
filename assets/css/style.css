@@ -1,0 +1,124 @@
+button {
+    all: unset;
+    outline: revert;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    background-image: linear-gradient(to bottom, #f5f4f1, #ebeae7, #e0dfdc, #d6d5d2, #cccbc8);
+    color: #1d1c1c;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header .title-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+
+header a {
+    color: #1d1c1c;
+}
+
+header .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: #b6ccd8;
+}
+
+header ul {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+header li {
+    display: flex;
+    justify-content: center;
+    gap: .5em
+}
+
+main {
+    background-color: #f5f4f1;
+    padding: 2em;
+    border-radius: 1em;
+    gap: 1em;
+    box-shadow: -7px 7px 9px -3px rgba(0, 0, 0, 0.1);
+}
+
+main .main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+main .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+main input {
+    border-radius: .5em;
+    padding: .2em;
+}
+
+main .select-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+main canvas {
+    padding: .5em;
+    border-radius: .5em;
+    margin-top: 1em;
+}
+
+main button {
+    width: fit-content;
+    padding: .3em 2em;
+    align-self: center;
+    background-color: #157fa6;
+    color: #fffefb;
+    margin-top: 1em;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+    box-shadow: -7px 10px 9px -3px rgba(0, 0, 0, 0.1);
+}
+
+main button:hover {
+    background-color: #459dc6;
+    color: #1d1c1c;
+    box-shadow: -6px 6px 3px -3px rgba(0, 0, 0, 0.1);
+}
